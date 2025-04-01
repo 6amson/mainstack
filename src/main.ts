@@ -11,8 +11,8 @@ config();
 const port = process.env.PORT || 3000;
 
 async function bootstrap() {
-  const app = await NestFactory.create(AppModule, { cors: true });
-  const userService = app.get(UserService);
+  const app = await NestFactory.create(AppModule);
+  // const userService = app.get(UserService);
   app.useGlobalPipes(new ValidationPipe());
   app.enableCors({
     "origin": "*",

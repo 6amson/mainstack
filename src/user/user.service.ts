@@ -1,6 +1,6 @@
 import { Document, Types } from 'mongoose';
 import { Injectable, HttpException, HttpStatus, } from "@nestjs/common";
-import { httpErrorException } from "./user.exception";
+import { httpErrorException } from "../app.exception";
 import { InjectModel } from "@nestjs/mongoose";
 import { Model } from "mongoose";
 import { User, Product, UserDocument } from "../schema/user.schema";

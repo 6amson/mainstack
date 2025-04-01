@@ -1,6 +1,6 @@
 import { Injectable, CanActivate, ExecutionContext, HttpStatus } from '@nestjs/common';
 import * as jwt from 'jsonwebtoken';
-import { httpErrorException } from '../user/user.exception';
+import { httpErrorException } from '../app.exception';
 import { config } from 'dotenv';
 import { RequestWithUser } from '../types/types'
 import { Document, Types } from 'mongoose';
